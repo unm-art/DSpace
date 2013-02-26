@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  template.xsl
+
+  Version: $Revision: 3705 $
+ 
+  Date: $Date: 2009-04-11 17:02:24 +0000 (Sat, 11 Apr 2009) $
+ 
+  Copyright (c) 2002-2005, Hewlett-Packard Company and Massachusetts
+  Institute of Technology.  All rights reserved.
+ 
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions are
+  met:
+ 
+  - Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+ 
+  - Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer in the
+  documentation and/or other materials provided with the distribution.
+ 
+  - Neither the name of the Hewlett-Packard Company nor the name of the
+  Massachusetts Institute of Technology nor the names of their
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+ 
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+  OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+  TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+  USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+  DAMAGE.
+-->
+
+<!--
+    TODO: Describe this XSL file    
+    Author: Alexey Maslov
+    
+-->    
+
+<xsl:stylesheet xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+	xmlns:dri="http://di.tamu.edu/DRI/1.0/"
+	xmlns:mets="http://www.loc.gov/METS/"
+	xmlns:xlink="http://www.w3.org/TR/xlink/"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
+	xmlns:dim="http://www.dspace.org/xmlns/dspace/dim"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml"
+	xmlns:mods="http://www.loc.gov/mods/v3"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns="http://www.w3.org/1999/xhtml"
+	exclude-result-prefixes="i18n dri mets xlink xsl dim xhtml mods dc">
+    
+    <xsl:import href="../dri2xhtml.xsl"/>
+    <xsl:output indent="yes"/>
+
+   <!-- Copied from ../dri2html/structural.xsl to override for customizations -->
+    <!-- The header (distinct from the HTML head element) contains the title, subtitle, login box and various
+        placeholders for header images -->
+    <xsl:template name="buildHeader">
+        <div id="unm_header_top">
+            <div id="skipnav">
+                <a href="#content" accesskey="2" tabindex="1">Skip to Main Content</a> <span class="hide"> | </span>
+                <a href="http://www.unm.edu" accesskey="1">UNM Homepage</a> <span class="hide"> | </span>
+                <a href="http://www.unm.edu/accessibility.html"  accesskey="0">Accessibility Statement</a>
+            </div>
+            <a href="http://www.unm.edu" id="unm_logo"><img  src="/themes/Lobo/images/unm_header_title.jpg" border="0" alt="The University of New Mexico" width="387" height="22"/></a>
+
+            <!-- Global Search UNM -->
+            <form id="unm_search_form" method="get" action="http://google.unm.edu/search">
+                <fieldset>
+                    <label class="search_query_label" for="unm_search_form_q">Search &#160;</label>
+                        <input type="text" id="unm_search_form_q"  name="q" maxlength="255" value="" class="search_query" accesskey="4" />
+                        <label for="unm_search_for_submit">
+                        <input name="submit" id="unm_search_for_submit" type="image" src="/themes/Lobo/images/search_button.gif" value="search" alt="search now" class="search_button" accesskey="s"/>
+                    </label>
+                    <input type="hidden" name="site" value="UNM"/>
+                    <input type="hidden" name="client" value="UNM"/>
+                    <input type="hidden" name="proxystylesheet" value="UNM"/>
+                    <input type="hidden" name="output" value="xml_no_dtd"/>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="unm_header_links">
+            <ul title="global UNM navigation">
+                <li><a href="http://www.unm.edu/depart.html" title="UNM A to Z">UNM A&#8211;Z</a></li> 
+                <li><a href="http://directory.unm.edu" title="Directory">Directory</a></li>
+                <li><a href="http://fastinfo.unm.edu" title="FastInfo">FastInfo</a></li> 
+                <li><a href="https://my.unm.edu" title="myUNM">myUNM</a></li> 
+            </ul> 
+        </div>
+
+        <div>
+            <a href="/"><img src="/themes/Lobo/images/LoboVault.gif" alt="LoboVault Home" height="75" id="lobovaultbanner" border="0" /></a>
+        </div>
+
+        <!-- Horizontal navigation menu -->
+        <div id="hornav">&#160;
+<!--
+          <ul class="bannernav">
+            <li><a href="http://escholar.unm.edu/ejournals.html">eJournals</a></li>
+            <li><a href="http://escholar.unm.edu/openaccess.html">Open Access</a></li>
+            <li><a href="https://repository.unm.edu/dspace/">LoboVault</a></li>
+            <li><a href="http://elibrary.unm.edu/">Libraries</a></li>
+            <li  class="lastlink"><a href="http://www.unm.edu/research/">Research</a></li>
+          </ul>
+-->
+        </div>
+
+        <div id="ds-header">
+            <h1 class="pagetitle">
+                <xsl:choose>
+                        <!-- protectiotion against an empty page title -->
+                        <xsl:when test="not(/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='title'])">
+                                <xsl:text> </xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                                <xsl:copy-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='title']/node()"/>
+                        </xsl:otherwise>
+                </xsl:choose>
+
+            </h1>
+            <h2 class="static-pagetitle"><i18n:text>xmlui.dri2xhtml.structural.head-subtitle</i18n:text></h2>
+
+
+            <ul id="ds-trail">
+                <xsl:choose>
+                        <xsl:when test="count(/dri:document/dri:meta/dri:pageMeta/dri:trail) = 0">
+                                <li class="ds-trail-link first-link"> - </li>
+                        </xsl:when>
+                        <xsl:otherwise>
+                                <xsl:apply-templates select="/dri:document/dri:meta/dri:pageMeta/dri:trail"/>
+                        </xsl:otherwise>
+                </xsl:choose>
+            </ul>
+
+<!--  REMOVED because the elements are provided elsewhere on page
+            <xsl:choose>
+                <xsl:when test="/dri:document/dri:meta/dri:userMeta/@authenticated = 'yes'">
+                    <div id="ds-user-box">
+                        <p>
+                            <a>
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="/dri:document/dri:meta/dri:userMeta/
+                                        dri:metadata[@element='identifier' and @qualifier='url']"/>
+                                </xsl:attribute>
+                                <i18n:text>xmlui.dri2xhtml.structural.profile</i18n:text>
+                                <xsl:value-of select="/dri:document/dri:meta/dri:userMeta/
+                                    dri:metadata[@element='identifier' and @qualifier='firstName']"/>
+                                <xsl:text> </xsl:text>
+                                <xsl:value-of select="/dri:document/dri:meta/dri:userMeta/
+                                    dri:metadata[@element='identifier' and @qualifier='lastName']"/>
+                            </a>
+                            <xsl:text> | </xsl:text>
+                            <a>
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="/dri:document/dri:meta/dri:userMeta/
+                                        dri:metadata[@element='identifier' and @qualifier='logoutURL']"/>
+                                </xsl:attribute>
+                                <i18n:text>xmlui.dri2xhtml.structural.logout</i18n:text>
+                            </a>
+                        </p>
+                    </div>
+                </xsl:when>
+                <xsl:otherwise>
+                    <div id="ds-user-box">
+                        <p>
+                            <a>
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="/dri:document/dri:meta/dri:userMeta/
+                                        dri:metadata[@element='identifier' and @qualifier='loginURL']"/>
+                                </xsl:attribute>
+                                <i18n:text>xmlui.dri2xhtml.structural.login</i18n:text>
+                            </a>
+                        </p>
+                    </div>
+                </xsl:otherwise>
+            </xsl:choose>
+-->
+        </div>
+    </xsl:template>    
+
+    <!-- Copied from structural.xsl to override h[eader]1 element size from exceeding 200% -->
+    <!-- The font-sizing variable is the result of a linear function applied to the character count of the heading text -->
+    <xsl:template match="dri:div/dri:head" priority="3">
+        <xsl:variable name="head_count" select="count(ancestor::dri:div)"/>
+        <!-- with the help of the font-sizing variable, the font-size of our header text is made continuously variable based on the character count -->
+        <xsl:variable name="font-sizing" select="365 - $head_count * 80 - string-length(current())"></xsl:variable>
+        <xsl:element name="h{$head_count}">
+            <!-- in case the chosen size is less than 120%, don't let it go below. Shrinking stops at 120% -->
+            <xsl:choose>
+                <xsl:when test="$font-sizing &lt; 120">
+                    <xsl:attribute name="style">font-size: 120%;</xsl:attribute>
+                </xsl:when>
+                <xsl:when test="$font-sizing &gt; 200">
+                    <xsl:attribute name="style">font-size: 200%;</xsl:attribute>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:attribute name="style">font-size: <xsl:value-of select="$font-sizing"/>%;</xsl:attribute>
+                </xsl:otherwise>
+            </xsl:choose>
+            <xsl:call-template name="standardAttributes">
+                <xsl:with-param name="class">ds-div-head</xsl:with-param>
+            </xsl:call-template>
+            <xsl:apply-templates />
+        </xsl:element>
+    </xsl:template>
+    
+    
+    <xsl:template match="dri:body">
+        <div id="ds-body">
+            <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='alert'][@qualifier='message']">
+                <div id="ds-system-wide-alert">
+                    <p>
+                        <xsl:copy-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='alert'][@qualifier='message']/node()"/>
+                    </p>
+                </div>
+            </xsl:if>
+            <xsl:apply-templates />
+        </div>
+    </xsl:template>
+    
+    <!-- Home Page Recent Submission: Read RSS, pull values and display -->
+    <xsl:template match="/dri:document/dri:body/dri:div[@n='comunity-browser']">
+        <!-- apply rest of template -->
+        <xsl:apply-templates />
+        <!-- Name value of the second feed element for RSS location -->
+        <xsl:variable name="RSSMapURL" select="concat('cocoon:/',/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='feed'][2])"/>
+        <h1 class="ds-list-head">
+            <i18n:text>xmlui.ArtifactBrowser.CommunityViewer.head_recent_submissions</i18n:text>
+        </h1>
+        <ul class="ds-artifact-list">
+            <!-- Open document, navigate to item and loop -->
+            <xsl:for-each select="document($RSSMapURL)/rss/channel/item">
+                <li class="ds-artifact-item odd">
+                    <div class="artifact-description">
+                        <div class="artifact-title">
+                            <a>
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="(link)"/>
+                                </xsl:attribute>
+                                <xsl:value-of select="title"/>
+                            </a>
+                        </div>
+                        <div class="artifact-info">
+                            <xsl:value-of select="description"/>
+                            <!-- Trim RSS pubDate value  -->
+                            <xsl:variable name="dateformated"
+                                select="substring(normalize-space(pubDate),1,16)"/>
+                            <xsl:text> (</xsl:text>
+                            <xsl:value-of select="$dateformated"/>
+                            <xsl:text>)</xsl:text>
+                        </div>
+                    </div>
+                </li>
+            </xsl:for-each>
+        </ul>
+    </xsl:template>
+    
+    <!-- An example of an existing template copied from structural.xsl and overridden -->  
+    <xsl:template name="buildFooter">
+        <div id="ds-footer">
+            <p style="text-align:left; width: 97%;">University Libraries<br />MSC05 3020<br />1 University of New Mexico<br />Albuquerque NM 87131<br />505.277.9100</p>
+            <div id="ds-footer-links">
+                <a>
+                    <xsl:attribute name="href">
+                        <xsl:text>http://www.unm.edu/accessibility.html</xsl:text>
+                    </xsl:attribute>
+                    <xsl:text>Accessibility</xsl:text>
+                </a>
+                <xsl:text> | </xsl:text>
+                <a>
+                    <xsl:attribute name="href">
+                        <xsl:text>http://www.unm.edu/legal.html</xsl:text>
+                    </xsl:attribute>
+                    <xsl:text>Legal</xsl:text>
+                </a>
+                <xsl:text> | </xsl:text>
+                <a>
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
+                        <xsl:text>/contact</xsl:text>
+                    </xsl:attribute>
+                    <i18n:text>xmlui.dri2xhtml.structural.contact-link</i18n:text>
+                </a>
+                <xsl:text> | </xsl:text>
+                <a>
+                    <xsl:attribute name="href">
+                        <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='contextPath'][not(@qualifier)]"/>
+                        <xsl:text>/feedback</xsl:text>
+                    </xsl:attribute>
+                    <i18n:text>xmlui.dri2xhtml.structural.feedback-link</i18n:text>
+                </a>
+            </div>
+        </div>
+    </xsl:template>
+
+    
+</xsl:stylesheet>

@@ -196,7 +196,7 @@ div.primary.repository.community, div.primary.repository.collection {
 }
 
 .recent-date-accessioned {
-    display: inline;
+    display: none;
 }
 
 div.ds-static-div.secondary.recent-submission span.recent-date-accessioned {
