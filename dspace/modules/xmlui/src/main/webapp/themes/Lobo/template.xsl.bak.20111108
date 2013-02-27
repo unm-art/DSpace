@@ -493,7 +493,7 @@
     <xsl:template match="dim:dim" mode="itemSummaryView-DIM">
         <table class="ds-includeSet-table">
             <xsl:choose>
-                <xsl:when test="dim:field[@mdschema='data'] and not(dim:field[@qualifier='streamurl'])">
+                <xsl:when test="dim:field[@mdschema='data']">
                     <xsl:call-template name="itemSummaryView-DIM-fields-DATA-mdschema">
                     </xsl:call-template>
                 </xsl:when>
@@ -526,22 +526,27 @@
                 <tr class="ds-table-row {$phase}">
                     <td><span class="bold"><i18n:text>xmlui.dri2xhtml.METS-1.0.item-title</i18n:text>: </span></td>
                     <td>
-                        <xsl:choose>
-                            <xsl:when test="count(dim:field[@element='title'][not(@qualifier)]) &gt; 1">
-                                <xsl:for-each select="dim:field[@element='title'][not(@qualifier)]">
-                                    <xsl:value-of select="./node()"/>
-                                    <xsl:if test="count(following-sibling::dim:field[@element='title'][not(@qualifier)]) != 0">
-                                        <xsl:text>; </xsl:text><br/>
-                                    </xsl:if>
-                                </xsl:for-each>
-                            </xsl:when>
-                            <xsl:when test="count(dim:field[@element='title'][not(@qualifier)]) = 1">
-                                <xsl:value-of select="dim:field[@element='title'][not(@qualifier)][1]/node()"/>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <i18n:text>xmlui.dri2xhtml.METS-1.0.no-title</i18n:text>
-                            </xsl:otherwise>
-                        </xsl:choose>
+                        <span class="Z3988">
+                            <xsl:attribute name="title">
+                                <xsl:call-template name="renderCOinS"/>
+                            </xsl:attribute>
+                            <xsl:choose>
+                                <xsl:when test="count(dim:field[@element='title'][not(@qualifier)]) &gt; 1">
+                                    <xsl:for-each select="dim:field[@element='title'][not(@qualifier)]">
+                                        <xsl:value-of select="./node()"/>
+                                        <xsl:if test="count(following-sibling::dim:field[@element='title'][not(@qualifier)]) != 0">
+                                            <xsl:text>; </xsl:text><br/>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                </xsl:when>
+                                <xsl:when test="count(dim:field[@element='title'][not(@qualifier)]) = 1">
+                                    <xsl:value-of select="dim:field[@element='title'][not(@qualifier)][1]/node()"/>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <i18n:text>xmlui.dri2xhtml.METS-1.0.no-title</i18n:text>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </span>
                     </td>
                 </tr>
                 <xsl:call-template name="itemSummaryView-DIM-fields">
@@ -1064,62 +1069,10 @@
                 </xsl:call-template>
             </xsl:when>
             
-            <!-- Embedded video row -->
-            <xsl:when test="$clause = 27 and (dim:field[@element='identifier'][@qualifier='streamurl'])">
-                <tr class="ds-table-row {$phase}">
-                    <td>
-                        <xsl:attribute name="colspan">2</xsl:attribute>
-                        <object>
-                            <xsl:attribute name="width">580</xsl:attribute>
-                            <xsl:attribute name="height">395</xsl:attribute>
-                            <param>
-                                <xsl:attribute name="name">movie</xsl:attribute>
-                                <xsl:attribute name="value">http://fpdownload.adobe.com/strobe/FlashMediaPlayback_101.swf</xsl:attribute>
-                            </param>
-                            <param>
-                                <xsl:attribute name="name">flashvars</xsl:attribute>
-                                <xsl:attribute name="value">
-                                    <xsl:text>src=</xsl:text>
-                                    <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='streamurl']/node()"/>
-                                    <xsl:text>&amp;poster=</xsl:text>
-                                    <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='streamposter']/node()"/>
-                                </xsl:attribute>
-                            </param>
-                            <param>
-                                <xsl:attribute name="name">allowFullScreen</xsl:attribute>
-                                <xsl:attribute name="value">true</xsl:attribute>
-                            </param>
-                            <param>
-                                <xsl:attribute name="name">allowscriptaccess</xsl:attribute>
-                                <xsl:attribute name="value">always</xsl:attribute>
-                            </param>
-                            <embed>
-                                <xsl:attribute name="src">http://fpdownload.adobe.com/strobe/FlashMediaPlayback_101.swf</xsl:attribute>
-                                <xsl:attribute name="type">application/x-shockwave-flash</xsl:attribute>
-                                <xsl:attribute name="allowscriptaccess">always</xsl:attribute>
-                                <xsl:attribute name="allowfullscreen">true</xsl:attribute>
-                                <xsl:attribute name="width">580</xsl:attribute>
-                                <xsl:attribute name="height">395</xsl:attribute>
-                                <xsl:attribute name="flashvars">
-                                    <xsl:text>src=</xsl:text>
-                                    <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='streamurl']/node()"/>
-                                    <xsl:text>&amp;poster=</xsl:text>
-                                    <xsl:copy-of select="dim:field[@element='identifier' and @qualifier='streamposter']/node()"/>
-                                </xsl:attribute>
-                            </embed>
-                        </object>
-                    </td>
-                </tr>
-                <xsl:call-template name="itemSummaryView-DIM-fields">
-                    <xsl:with-param name="clause" select="($clause + 1)"/>
-                    <xsl:with-param name="phase" select="$otherPhase"/>
-                </xsl:call-template>
-            </xsl:when>
-            
             <!-- recurse without changing phase if we didn't output anything -->
             <xsl:otherwise>
                 <!-- IMPORTANT: This test should be updated if clauses are added! -->
-                <xsl:if test="$clause &lt; 28">
+                <xsl:if test="$clause &lt; 27">
                     <xsl:call-template name="itemSummaryView-DIM-fields">
                         <xsl:with-param name="clause" select="($clause + 1)"/>
                         <xsl:with-param name="phase" select="$phase"/>
@@ -1152,19 +1105,24 @@
                 <tr class="ds-table-row {$phase}">
                     <td><span class="bold">Project Name: </span></td>
                     <td>
-                        <xsl:choose>
-                            <xsl:when test="count(dim:field[@element='title'][not(@qualifier)]) &gt; 0">
-                                <xsl:for-each select="dim:field[@element='title'][not(@qualifier)]">
-                                    <xsl:value-of select="./node()"/>
-                                    <xsl:if test="count(following-sibling::dim:field[@element='title'][not(@qualifier)]) != 0">
-                                        <xsl:text>; </xsl:text><br/>
-                                    </xsl:if>
-                                </xsl:for-each>
-                            </xsl:when>
-                            <xsl:otherwise>
-                                <i18n:text>xmlui.dri2xhtml.METS-1.0.no-title</i18n:text>
-                            </xsl:otherwise>
-                        </xsl:choose>
+                        <span class="Z3988">
+                            <xsl:attribute name="title">
+                                <xsl:call-template name="renderCOinS"/>
+                            </xsl:attribute>
+                            <xsl:choose>
+                                <xsl:when test="count(dim:field[@element='title'][not(@qualifier)]) &gt; 0">
+                                    <xsl:for-each select="dim:field[@element='title'][not(@qualifier)]">
+                                        <xsl:value-of select="./node()"/>
+                                        <xsl:if test="count(following-sibling::dim:field[@element='title'][not(@qualifier)]) != 0">
+                                            <xsl:text>; </xsl:text><br/>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <i18n:text>xmlui.dri2xhtml.METS-1.0.no-title</i18n:text>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                        </span>
                     </td>
                 </tr>
                 <xsl:call-template name="itemSummaryView-DIM-fields-DATA-mdschema">
@@ -1666,7 +1624,7 @@
     <xsl:template match="dim:dim" mode="itemSummaryList-DIM"> 
         <xsl:variable name="itemWithdrawn" select="@withdrawn" />
         <div class="artifact-description">
-		   <div class="artifact-title">
+            <div class="artifact-title">
                 <span class="recent-date-accessioned">
                     <xsl:text>[</xsl:text><xsl:value-of select="substring(dim:field[@element='date' and @qualifier='accessioned']/node(),1,10)"/><xsl:text>]</xsl:text>
                 </span>
@@ -1681,33 +1639,31 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </xsl:attribute>
-                    <xsl:choose>
-                        <xsl:when test="dim:field[@mdschema='dc' and @element='title'] and (string-length(dim:field[@element='title']) &gt; 0)">
-                            <xsl:value-of select="dim:field[@mdschema='dc' and @element='title'][1]/node()"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <i18n:text>xmlui.dri2xhtml.METS-1.0.no-title</i18n:text>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                </xsl:element>
-               <!-- Generate COinS with empty content per spec but force Cocoon to not create a minified tag  -->
-               <span class="Z3988">
-                   <xsl:attribute name="title">
-                       <xsl:call-template name="renderCOinS"/>
-                   </xsl:attribute>
-                   &#xFEFF; <!-- non-breaking space to force separating the end tag -->
-               </span>
-           </div>
+                    <span class="Z3988">
+                        <xsl:attribute name="title">
+                            <xsl:call-template name="renderCOinS"/>
+                        </xsl:attribute>
+                        <xsl:choose>
+                            <xsl:when test="dim:field[@element='title']">
+                                <xsl:value-of select="dim:field[@element='title'][1]/node()"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <i18n:text>xmlui.dri2xhtml.METS-1.0.no-title</i18n:text>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </span>
+                </xsl:element>    
+            </div>
             <div class="artifact-info">
                 <span class="author">
                     <xsl:choose>
                         <xsl:when test="dim:field[@element='contributor'][@qualifier='author']">
                             <xsl:for-each select="dim:field[@element='contributor'][@qualifier='author']">
                                 <span>
-                                  <xsl:if test="@authority">
-                                    <xsl:attribute name="class"><xsl:text>ds-dc_contributor_author-authority</xsl:text></xsl:attribute>
-                                  </xsl:if>
-                                  <xsl:copy-of select="node()"/>
+                                    <xsl:if test="@authority">
+                                        <xsl:attribute name="class"><xsl:text>ds-dc_contributor_author-authority</xsl:text></xsl:attribute>
+                                    </xsl:if>
+                                    <xsl:copy-of select="node()"/>
                                 </span>
                                 <xsl:if test="count(following-sibling::dim:field[@element='contributor'][@qualifier='author']) != 0">
                                     <xsl:text>; </xsl:text>
@@ -1737,19 +1693,19 @@
                 </span>
                 <xsl:text> </xsl:text>
                 <xsl:if test="dim:field[@element='date' and @qualifier='issued'] or dim:field[@element='publisher']">
-	                <span class="publisher-date">
-	                    <xsl:text>(</xsl:text>
-	                    <xsl:if test="dim:field[@element='publisher']">
-	                        <span class="publisher">
-	                            <xsl:copy-of select="dim:field[@element='publisher']/node()"/>
-	                        </span>
-	                        <xsl:text>, </xsl:text>
-	                    </xsl:if>
-	                    <span class="date">
-	                        <xsl:value-of select="substring(dim:field[@element='date' and @qualifier='issued']/node(),1,10)"/>
-	                    </span>
-	                    <xsl:text>)</xsl:text>
-	                </span>
+                    <span class="publisher-date">
+                        <xsl:text>(</xsl:text>
+                        <xsl:if test="dim:field[@element='publisher']">
+                            <span class="publisher">
+                                <xsl:copy-of select="dim:field[@element='publisher']/node()"/>
+                            </span>
+                            <xsl:text>, </xsl:text>
+                        </xsl:if>
+                        <span class="date">
+                            <xsl:value-of select="substring(dim:field[@element='date' and @qualifier='issued']/node(),1,10)"/>
+                        </span>
+                        <xsl:text>)</xsl:text>
+                    </span>
                 </xsl:if>
             </div>
         </div>

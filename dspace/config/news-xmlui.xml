@@ -2,8 +2,10 @@
 <document xmlns="http://di.tamu.edu/DRI/1.0/" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" version="1.1">
 <body>
 <div id="file.news.div.news" n="news" rend="primary">
-<head>DSpace Repository</head>
-<p>DSpace is a digital service that collects, preserves, and distributes digital material. Repositories are important tools for preserving an organization&apos;s legacy; they facilitate digital preservation and scholarly communication.</p>
+<head>Welcome to LoboVault!</head>
+<p>LoboVault is UNM's Institutional Repository. It hosts scholarly publications from UNM faculty, <xref target="http://repository.unm.edu/handle/1928/2736">graduate student theses and dissertations</xref>, UNM administrative records, and more. Please contact us at <xref target="mailto:reposit@unm.edu">reposit@unm.edu</xref> for more information or to become a submitter to LoboVault.</p>
+<p>See the <xref target="http://escholar.unm.edu">Office of eScholarship</xref> for more information about Scholarly Communications at UNM.</p>
+    <p>Download the <xref target="http://www.arl.org/sparc/bm~doc/Access-Reuse_Addendum.pdf">SPARC Author Addendum</xref> to help negotiate copyright with publishers.</p>
 </div>
 </body>
 <options/>
