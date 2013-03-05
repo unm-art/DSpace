@@ -48,10 +48,15 @@ a:hover, a:active {
         text-decoration: none;
 }
 
+div#ds-main {
+	width: 960px;
+}
+
 div#ds-body {
         border: 2px solid #cccccc;
         float: right;
         margin-top: 10px;
+	width: 800px;
 }
 
 div#ds-body h1, div#ds-body h2 {
@@ -92,6 +97,10 @@ div.ds-option-set {
 
 div#ds-header {
         border: 0px;
+}
+
+div.ds-static-div {
+	border: 0px;
 }
 
 div#identifier-citation {
@@ -152,6 +161,7 @@ ul#ds-trail {
 
 ul.ds-artifact-list {
 	border: 2px solid #cccccc;
+	width: 795px;
 }
 
 ul.ds-artifact-list li.odd {
@@ -292,83 +302,343 @@ div#aspect_statistics_PageStatsTransformer_div_stats {
 	display: none;
 }
 
-#unm_header_top {
-	background-color: #5e5d60;
-	border-bottom: 1px solid #2f2f2f;
-	border-top: 2px solid #c10037;
-	min-height: 23px;
-	padding: 4px 0px 2px 0px;
-	width: 100%;
-}
+/* UNM HEADER STYLES */
 
+#unm_header {
+    background-color : #5E5D60;
+    border-top : 1px solid #232323;
+    border-bottom : 1px solid #232323;
+    height : auto;
+    overflow : auto
+}
+#unm_header_links a {
+    text-decoration : none
+}
+.unm_header_title {
+    float : left;
+    padding-left : 20px;
+    padding-top : 1px
+}
+.unm_header_title a {
+    color : #fff;
+    text-decoration : none;
+    font-size : .95em;
+    font-weight : bold;
+    line-height : 1.5em
+}
+.header_content {
+    width : 960px;
+    margin : 0 auto;
+    overflow : visible;
+    padding : 1px 0 2px 0
+}
 #unm_logo {
-	float: left;
-	margin-left: 12px;
-	margin-top: 1px;
-	z-index: 10;
+    z-index : 10;
+    margin : 0;
+    vertical-align : top;
+    float : left
 }
-
 #unm_header_links {
-	background: #cccccc url(../images/unmlinks_back.gif) bottom left no-repeat;
-	clear: none;
-	float: right;
-	margin: 0px 0px 10px 0px;
-	padding: 0px 0px 0px 25px;
-        position: absolute;
-        right: 0px;
-	text-align: right;
-        top: 32px;
+    background : none;
+    text-align : right;
+    margin : 0;
+    padding : 0 0 0 0
 }
-
 #unm_header_links ul {
-	margin: 0px;
-	padding: 0px 12px 0px 0px;
+    margin : 0;
+    padding : 0;
+    display : inline
 }
-
 #unm_header_links li {
-	display: inline;
-	line-height: 25px;
-	padding-left: 10px;
+    display : inline;
+    list-style-type : none;
+    padding : 0 0 0 10px;
+    margin : 0
 }
-
-#unm_header_links li a {
-	color: #5e5d60;
-	font-size: .95em;
-	font-weight: bold;
-	line-height: 1.5em;
+#unm_header_links li a,
+.unm_panel_open {
+    color : #fff;
+    font-size : .95em;
+    font-weight : bold;
+    line-height : 1.5em
 }
-
 #unm_header_links li a:hover {
-	color: #c10037;
+    color : #eee
 }
-
-/****  Global (UNM) Search Form *****/
 #unm_search_form {
-	color: #ffffff;
-	font-size: 1em;
-	float: right;
-	font-weight: bold;
-	margin: -5px 12px 0px 0px;
-	text-align: right;
-	white-space: nowrap;
+    text-align : right;
+    font-size : 1em;
+    color : #FFF;
+    font-weight : bold;
+    margin : 0 0 0 10px;
+    padding : 0;
+    white-space : nowrap;
+    display : inline
 }
-
+#unm_search_form div {
+    display : inline !important
+}
+#unm_search_form fieldset {
+    padding : 0;
+    margin : 0;
+    border : 0;
+    display : inline
+}
 #unm_search_form input {
-	margin: 0px;
-	vertical-align: middle;
-	border: 1px solid #2f2f2f;
+    margin : 0;
+    vertical-align : middle;
+    border : 0;
+    height : 16px
 }
-
+#unm_search_form p {
+    margin : 0;
+    padding : 0
+}
+#unm_search_form label {
+    margin : 0;
+    display : none
+}
 #unm_search_form .search_button {
-	background-color: transparent;
-	margin: 0px;
-	padding: 0px;
-	border: 0px;
+    background-color : transparent;
+    margin : 0;
+    padding : 0;
+    border : 0
+}
+#unm_search_form .search_button:hover {
+    background-color : #e97d1f
+}
+#unm_search_form input.image_button {
+    background-color : transparent;
+    border : 0
+}
+#unm_search_form label.search_query_label {
+    color : #fff
+}
+#skipnav a,
+#skipnav a:hover,
+#skipnav a:visited {
+    position : absolute;
+    left : 0px;
+    top : -500px;
+    width : 1px;
+    height : 1px;
+    overflow : hidden;
+    color : #FFF
+}
+#skipnav ul:active,
+#skipnav a:active,
+#skipnav a:focus {
+    position : static;
+    width : auto;
+    height : auto
+}
+.hide {
+    display : none;
+    background-color : #fff;
+    color : #000
+}
+#unm_panel {
+    position : absolute;
+    width : 100%;
+    top : 0;
+    left : 0;
+    background-color : #333;
+    filter : alpha(opacity=98);
+    -moz-opacity : 0.98;
+    -khtml-opacity : 0.98;
+    opacity : 0.98;
+    color : #fff;
+    display : none;
+    z-index : 2
+}
+#unm_panel_content {
+    width : 940px;
+    margin : 0 auto;
+    padding-top : 10px;
+    color : #fff;
+    filter : alpha(opacity=100)
+;
+    -moz-opacity : 1;
+    -khtml-opacity : 1;
+    opacity : 1;
+    overflow : hidden;
+    position : relative
+}
+#unm_panel h2 {
+    border-bottom : 1px solid #fff;
+    margin-bottom : 10px;
+    padding-bottom : 2px
+}
+.unm_panel_open {
+    color : #fff;
+    font-size : .95em;
+    font-weight : bold;
+    line-height : 1.5em
+    padding-right : 16px;
+    background : transparent url(/v1/images/unm_sprites.gif) 100% -35px no-repeat;
+    font-weight : bold;
+    cursor : pointer
+}
+span.panel_link {
+    padding-right : 16px
+}
+#unm_panel_close {
+    text-align : right;
+    padding-right : 5px;
+    clear : both;
+    position : relative;
+    width : auto;
+    background : #333 url(/v1/images/unm_panel_back.gif) bottom left repeat-x;
+    cursor : pointer;
+    z-index : 1
+}
+#unm_panel_tab {
+    position : absolute;
+    top : 0;
+    right : 5px;
+    cursor : pointer
+}
+#unm_panel_col1 {
+    width : 420px;
+    float : left;
+    margin : 0 10px
+}
+#unm_panel_col2 {
+    width : 250px;
+    float : left;
+    margin : 0 10px
+}
+#unm_panel_col3 {
+    width : 210px;
+    float : left;
+    margin : 0 10px
+}
+#unm_panel a,
+#unm_panel a:visited {
+    background-image : none;
+    color : #fff
+}
+#unm_panel ul.panel_links {
+    list-style : none;
+    margin : -10px 0 0 0;
+    padding : 0
+}
+#unm_panel ul.panel_links li {
+    padding : 10px 0 5px 45px;
+    margin : 0 5px 0 5px;
+    list-style : none;
+    background : transparent url(/v1/images/panel_sprites.png) no-repeat;
+    border-bottom : 1px solid #ccc;
+    float : left;
+    width : 155px;
+    display : inline
+}
+#unm_panel ul.panel_links li:hover {
+    background-color : #999
+}
+#unm_panel ul.panel_links li h3 {
+    margin : 0
+}
+#unm_panel ul.panel_links li a,
+#unm_panel ul.panel_links li a:visited {
+    color : #fff
+}
+#unm_panel ul.panel_links li.panel_link_library {
+    background-position : 5px 12px
+}
+#unm_panel ul.panel_links li.panel_link_gw {
+    background-position : 5px -500px
+}
+#unm_panel ul.panel_links li.panel_link_webmail {
+    background-position : 5px -244px
+}
+#unm_panel ul.panel_links li.panel_link_webct {
+    background-position : 5px -180px
+}
+#unm_panel ul.panel_links li.panel_link_studentinfo {
+    background-position : 5px -308px
+}
+#unm_panel ul.panel_links li.panel_link_fastinfo {
+    background-position : 5px -436px
+}
+#unm_panel ul.panel_links li.panel_link_myunm {
+    background-position : 5px -52px
+}
+#unm_panel ul.panel_links li.panel_link_az {
+    background-position : 5px -372px
+}
+#unm_panel ul.panel_links li.panel_link_directory {
+    background-position : 5px -116px
+}
+#unm_alert {
+    padding : 15px 100px;
+    background : #c10037 url(/v1/images/message_icons/alert.png) 60px 10px no-repeat;
+    font-size : 1.25em;
+    font-weight : bold;
+    color : #fff;
+    margin : 0
+}
+#unm_alert h1 {
+    color : #fff;
+    margin-bottom : .25em;
+    font-size : 1.5em
+}
+#unm_alert a {
+    color : #fff
+}
+#unm_alert p {
+    margin : 0
+}
+.unm_weather {
+    color : #fff
+}
+#unm_weather_header {
+    font-size : 1.2em;
+    font-weight : bold;
+    padding : 5px 0;
+    border-bottom : 1px solid #999
+}
+.unm_weather_timestamp {
+    font-size : .7em;
+    font-weight : normal
+}
+.unm_weather_current_img {
+    float : left
+}
+.unm_weather_current_img img {
+    behavior : url("/v1/stylesheets/iepngfix.htc")
+}
+#unm_weather_current_conditions {
+    text-align : left;
+    margin-left : 125px;
+    height : 128px;
+    font-size : 1.25em
+}
+.unm_weather_current_temp {
+    font-size : 2.5em;
+    font-weight : bold;
+    margin-bottom : 10px
+}
+.unm_weather_temps {
+    margin-bottom : 10px
+}
+.unm_weather_current_condition {
+    font-size : 1.2em
+}
+.unm_weather_data {
+    float : left;
+    padding-right : 20px
+}
+#unm_weather_conditions {
+    padding : 10px 0;
+    border-bottom : 1px solid #999;
+    margin-bottom : 10px
+}
+#unm_weather_current_details {
+    font-size : .75em
 }
 
-#unm_search_form .search_button:hover {
-	background-color: #e97d1f;
-}
+/* END UNM HEADER STYLES */
 
 div#hornav {
 	height: 1.5em;

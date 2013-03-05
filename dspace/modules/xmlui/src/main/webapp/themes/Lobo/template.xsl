@@ -226,37 +226,23 @@
     <!-- The header (distinct from the HTML head element) contains the title, subtitle, login box and various
         placeholders for header images -->
     <xsl:template name="buildHeader">
-        <div id="unm_header_top">
-            <div id="skipnav">
-                <a href="#content" accesskey="2" tabindex="1">Skip to Main Content</a> <span class="hide"> | </span>
-                <a href="http://www.unm.edu" accesskey="1">UNM Homepage</a> <span class="hide"> | </span>
-                <a href="http://www.unm.edu/accessibility.html"  accesskey="0">Accessibility Statement</a>
+        <div id="unm_header">
+            <div class="header_content">
+                <div id="skipnav"><a accesskey="2" href="#content" tabindex="1">Skip to Main Content</a> <span class="hide">|</span> <a accesskey="1" href="http://www.unm.edu">UNM Homepage</a> <span class="hide">|</span> <a accesskey="0" href="http://www.unm.edu/accessibility.html">Accessibility Statement</a></div>
+                <div class="unm_header_title"><a href="http://www.unm.edu" title="The University of New Mexico">The University of New Mexico</a></div>
+                <div id="unm_header_links">
+                    <ul title="global UNM navigation">
+                        <li><a href="http://www.unm.edu/depart.html" title="UNM A to Z">UNM A-Z</a></li>
+                        <li><a href="http://studentinfo.unm.edu" title="StudentInfo">StudentInfo</a></li>
+                        <li><a href="http://fastinfo.unm.edu" title="FastInfo">FastInfo</a></li>
+                        <li><a href="https://my.unm.edu" title="myUNM">myUNM</a></li>
+                        <li><a href="http://directory.unm.edu" title="Directory">Directory</a></li>
+                    </ul>
+                    <form action="http://google.unm.edu/search" id="unm_search_form" method="get">
+                        <fieldset><input name="site" type="hidden" value="UNM" /> <input name="client" type="hidden" value="UNM" /> <input name="proxystylesheet" type="hidden" value="UNM" /> <input name="output" type="hidden" value="xml_no_dtd" /> <input accesskey="4" alt="input search query here" class="search_query" id="unm_search_form_q" maxlength="255" name="q" title="input search query here" type="text" /> <input accesskey="s" alt="search now" class="search_button" id="unm_search_for_submit" name="submit" src="http://webcore.unm.edu/v1/images/search.gif" type="image" value="search" /></fieldset>
+                    </form>
+                </div>
             </div>
-            <a href="http://www.unm.edu" id="unm_logo"><img  src="/themes/Lobo/images/unm_header_title.jpg" border="0" alt="The University of New Mexico" width="387" height="22"/></a>
-
-            <!-- Global Search UNM -->
-            <form id="unm_search_form" method="get" action="http://google.unm.edu/search">
-                <fieldset>
-                    <label class="search_query_label" for="unm_search_form_q">Search &#160;</label>
-                        <input type="text" id="unm_search_form_q"  name="q" maxlength="255" value="" class="search_query" accesskey="4" />
-                        <label for="unm_search_for_submit">
-                        <input name="submit" id="unm_search_for_submit" type="image" src="/themes/Lobo/images/search_button.gif" value="search" alt="search now" class="search_button" accesskey="s"/>
-                    </label>
-                    <input type="hidden" name="site" value="UNM"/>
-                    <input type="hidden" name="client" value="UNM"/>
-                    <input type="hidden" name="proxystylesheet" value="UNM"/>
-                    <input type="hidden" name="output" value="xml_no_dtd"/>
-                </fieldset>
-            </form>
-        </div>
-
-        <div id="unm_header_links">
-            <ul title="global UNM navigation">
-                <li><a href="http://www.unm.edu/depart.html" title="UNM A to Z">UNM A&#8211;Z</a></li> 
-                <li><a href="http://directory.unm.edu" title="Directory">Directory</a></li>
-                <li><a href="http://fastinfo.unm.edu" title="FastInfo">FastInfo</a></li> 
-                <li><a href="https://my.unm.edu" title="myUNM">myUNM</a></li> 
-            </ul> 
         </div>
 
         <div>
@@ -360,7 +346,7 @@
             <xsl:variable name="wid">
                 <xsl:choose>
                     <xsl:when test="../@n='community-home' or ../@n='collection-home'">
-                        <xsl:text> width: 480px;</xsl:text>
+                        <xsl:text> width: 680px;</xsl:text>
                     </xsl:when>
                     <xsl:otherwise>
                         <xsl:text> width: 100%;</xsl:text>
@@ -414,6 +400,15 @@
     
     <!-- Home Page Recent Submission: Read RSS, pull values and display -->
     <xsl:template match="/dri:document/dri:body/dri:div[@n='comunity-browser']">
+        <!-- add search box code above Community list. -->
+        <h1 style="font-size: 200%; width: 100%;" class="ds-div-head">Search LoboVault</h1>
+        <form xmlns="http://di.tamu.edu/DRI/1.0/" id="front-page-search" class="ds-interactive-div primary" action="/search" method="get" onsubmit="javascript:tSubmit(this);">
+            <p class="ds-paragraph">Enter some text in the box below to search LoboVault.</p>
+            <p xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-paragraph">
+                <input id="aspect_artifactbrowser_FrontPageSearch_field_query" class="ds-text-field" name="query" type="text" value="" />
+                <input id="aspect_artifactbrowser_FrontPageSearch_field_submit" class="ds-button-field" name="submit" type="submit" value="Go" />
+            </p>
+        </form>
         <!-- apply rest of template -->
         <xsl:apply-templates />
         <!-- Check for and name value of the second feed element for RSS location -->
