@@ -1112,26 +1112,6 @@ it, please enter the types and the actual numbers or codes above.</hint>
 			<stored-value></stored-value>
 		</pair>
 		<pair>
-			<displayed-value>2010 July</displayed-value>
-			<stored-value>July 2010</stored-value>
-		</pair>
-		<pair>
-			<displayed-value>2010 December</displayed-value>
-			<stored-value>December 2010</stored-value>
-		</pair>
-		<pair>
-			<displayed-value>2011 May</displayed-value>
-			<stored-value>May 2011</stored-value>
-		</pair>
-		<pair>
-			<displayed-value>2011 July</displayed-value>
-			<stored-value>July 2011</stored-value>
-		</pair>
-		<pair>
-			<displayed-value>2011 December</displayed-value>
-			<stored-value>December 2011</stored-value>
-		</pair>
-		<pair>
 			<displayed-value>2012 May</displayed-value>
 			<stored-value>May 2012</stored-value>
 		</pair>
@@ -1145,19 +1125,39 @@ it, please enter the types and the actual numbers or codes above.</hint>
 		</pair>
 		<pair>
 			<displayed-value>2013 May</displayed-value>
-			<stored-value>May 2009</stored-value>
+			<stored-value>May 2013</stored-value>
 		</pair>
 		<pair>
 			<displayed-value>2013 July</displayed-value>
-			<stored-value>July 2009</stored-value>
+			<stored-value>July 2013</stored-value>
 		</pair>
 		<pair>
 			<displayed-value>2013 December</displayed-value>
-			<stored-value>December 2009</stored-value>
+			<stored-value>December 2013</stored-value>
 		</pair>
 		<pair>
 			<displayed-value>2014 May</displayed-value>
-			<stored-value>May 2010</stored-value>
+			<stored-value>May 2014</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2015 July</displayed-value>
+			<stored-value>July 2015</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2015 December</displayed-value>
+			<stored-value>December 2015</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2016 May</displayed-value>
+			<stored-value>May 2016</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2016 July</displayed-value>
+			<stored-value>July 2016</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2016 December</displayed-value>
+			<stored-value>December 2016</stored-value>
 		</pair>
 	</value-pairs>
 
