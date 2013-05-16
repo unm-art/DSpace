@@ -1,0 +1,776 @@
+/*
+  style.css
+
+  Version: $Revision: 3705 $
+ 
+  Date: $Date: 2009-04-11 17:02:24 +0000 (Sat, 11 Apr 2009) $
+ 
+  Copyright (c) 2002-2005, Hewlett-Packard Company and Massachusetts
+  Institute of Technology.  All rights reserved.
+ 
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions are
+  met:
+ 
+  - Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+ 
+  - Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer in the
+  documentation and/or other materials provided with the distribution.
+ 
+  - Neither the name of the Hewlett-Packard Company nor the name of the
+  Massachusetts Institute of Technology nor the names of their
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+ 
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  HOLDERS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+  OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+  TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+  USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+  DAMAGE.
+*/
+
+@import url('/themes/Reference/lib/style.css');
+
+a, a:link, a:visited {
+        color: #c10037;
+}
+
+a:hover, a:active {
+        text-decoration: none;
+}
+
+div#ds-main {
+	width: 960px;
+}
+
+div#ds-body {
+        border: 2px solid #cccccc;
+        float: right;
+        margin-top: 10px;
+	width: 800px;
+}
+
+div#ds-body h1, div#ds-body h2 {
+        color: #c10037;
+}
+
+div#ds-footer {
+        border: 3px solid #cccccc;
+        height: 80px;
+}
+
+div#ds-footer-links {
+	top: 57px;
+}
+
+div#ds-options {
+        float: left;
+        margin-top: -5px;
+}
+
+div#ds-options h3 {
+        background-color: #ffffff;
+        color: #555555;
+}
+
+div#ds-options h4 {
+        color: #555555;
+}
+
+div#ds-options li {
+        color: #000000;
+}
+
+div.ds-option-set {
+        background-color: #ffffff;
+        border: 2px solid #cccccc;
+}
+
+div#ds-header {
+        border: 0px;
+}
+
+div.ds-static-div {
+	border: 0px;
+}
+
+div#identifier-citation {
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+    width: 90%;    
+}
+
+div#aspect_artifactbrowser_CommunityViewer_div_community-browse, div#aspect_artifactbrowser_CollectionViewer_div_collection-browse {
+    border: 2px solid #CCCCCC;
+    padding: 0px 0px 10px 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 80px;
+}
+
+div#aspect_artifactbrowser_CommunityViewer_div_community-browse ul.ds-simple-list, div#aspect_artifactbrowser_CollectionViewer_div_collection-browse ul.ds-simple-list {
+    list-style-position: inside;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+div#aspect_artifactbrowser_CommunityViewer_div_community-browse h3.ds-head, div#aspect_artifactbrowser_CollectionViewer_div_collection-browse h3.ds-head {
+    margin-bottom: 6px;
+    margin-left: -10px;
+    margin-top: 5px;
+}
+
+div.browse {
+        display: inline;
+}
+
+ul.alphabet a {
+        color: #c10037;
+}
+
+ul.alphabet a:hover {
+        color: #c10037;
+}
+
+ul.collection-browse, ul.community-browse {
+    display: inline;
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: -10px;
+}
+
+ul#ds-trail {
+        background-color: white;
+        border: 0px;
+        margin-top: 0px;
+}
+
+ul.ds-artifact-list {
+	border: 2px solid #cccccc;
+	width: 795px;
+}
+
+ul.ds-artifact-list li.odd {
+	background-color: #eeeeee;
+}
+
+ul.ds-artifact-list li.even {
+	background-color: #ffffff;
+}
+
+ul.ds-artifact-list li div.artifact-title a:link {
+	color: #c10037;
+}
+
+ul.ds-artifact-list li div.artifact-title a:visited {
+	color: #c10037;
+}
+
+li.page-link a,li.first-page-link a,li.last-page-link a {
+	color: #c10037;
+}
+
+li.current-page-link a {
+	color: #c10037;
+}
+
+a.next-page-link {
+	color: #c10037;
+}
+
+div.pagination {
+	background-color: #ffffff;
+	border: 2px solid #cccccc;
+}
+
+div.pagination-masked {
+	background-color: #ffffff;
+	border: 2px solid #cccccc;
+}
+div.primary.repository.community, div.primary.repository.collection {
+    overflow: visible;
+}
+
+.recent-date-accessioned {
+    display: none;
+}
+
+div.ds-static-div.secondary.recent-submission span.recent-date-accessioned {
+    display: inline;
+    font-weight: normal;
+}
+
+form.ds-interactive-div li.ds-form-item.last {
+        border-top: 2px solid #cccccc;
+        color: inherit;
+        background-color: #eeeeee;
+}
+
+fieldset.ds-form-list {
+	border: 2px solid #cccccc;
+	background-color: #ffffff;
+}
+
+fieldset.ds-form-list legend {
+        color: #c10037;
+}
+
+tr.ds-table-row.odd {
+	background-color: #eeeeee;
+}
+
+tr.ds-table-row.even {
+	background-color: #ffffff;
+}
+
+table {
+	border: #cccccc;
+}
+
+tr.ds-table-header-row {
+	background-color: #ffffff;
+}
+
+form.ds-interactive-div fieldset.ds-form-sublist legend {
+	color: #c10037;
+}
+
+form.ds-interactive-div li.ds-form-item.last {
+        background-color: #eeeeee;
+}
+
+div#aspect_statistics_PageStatsTransformer_div_item-home h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+div#aspect_statistics_PageStatsTransformer_div_stats {
+    background-color: #eeeeee;
+    padding: 5px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.lobovaultitemstat td {
+    background-color: #eeeeee;
+    padding: 0px;
+}
+
+.lobovaultitemstat td.datacell {
+    text-align: right;
+    width: 45px;
+}
+
+.lobovaultitemstat td.labelcell {
+    padding-left: 30px;
+}
+
+#skipnav a,  #skipnav a:hover, #skipnav a:visited {
+	color: #ffffff;
+	height: 1px;
+	left: 0px;
+	overflow: hidden;
+	position: absolute;
+	top: -500px;
+	width: 1px;
+}
+
+#skipnav ul:active,  #skipnav a:active, #skipnav a:focus {
+	height: auto;
+	position: static;
+	width: auto;
+}
+
+.hide {
+	display: none;
+}
+
+/* UNM HEADER STYLES */
+
+#unm_header {
+    background-color : #5E5D60;
+    border-top : 1px solid #232323;
+    border-bottom : 1px solid #232323;
+    height : auto;
+    overflow : auto
+}
+#unm_header_links a {
+    text-decoration : none
+}
+.unm_header_title {
+    float : left;
+    padding-left : 20px;
+    padding-top : 1px
+}
+.unm_header_title a {
+    color : #fff;
+    text-decoration : none;
+    font-size : .95em;
+    font-weight : bold;
+    line-height : 1.5em
+}
+.header_content {
+    width : 960px;
+    margin : 0 auto;
+    overflow : visible;
+    padding : 1px 0 2px 0
+}
+#unm_logo {
+    z-index : 10;
+    margin : 0;
+    vertical-align : top;
+    float : left
+}
+#unm_header_links {
+    background : none;
+    text-align : right;
+    margin : 0;
+    padding : 0 0 0 0
+}
+#unm_header_links ul {
+    margin : 0;
+    padding : 0;
+    display : inline
+}
+#unm_header_links li {
+    display : inline;
+    list-style-type : none;
+    padding : 0 0 0 10px;
+    margin : 0
+}
+#unm_header_links li a,
+.unm_panel_open {
+    color : #fff;
+    font-size : .95em;
+    font-weight : bold;
+    line-height : 1.5em
+}
+#unm_header_links li a:hover {
+    color : #eee
+}
+#unm_search_form {
+    text-align : right;
+    font-size : 1em;
+    color : #FFF;
+    font-weight : bold;
+    margin : 0 0 0 10px;
+    padding : 0;
+    white-space : nowrap;
+    display : inline
+}
+#unm_search_form div {
+    display : inline !important
+}
+#unm_search_form fieldset {
+    padding : 0;
+    margin : 0;
+    border : 0;
+    display : inline
+}
+#unm_search_form input {
+    margin : 0;
+    vertical-align : middle;
+    border : 0;
+    height : 16px
+}
+#unm_search_form p {
+    margin : 0;
+    padding : 0
+}
+#unm_search_form label {
+    margin : 0;
+    display : none
+}
+#unm_search_form .search_button {
+    background-color : transparent;
+    margin : 0;
+    padding : 0;
+    border : 0
+}
+#unm_search_form .search_button:hover {
+    background-color : #e97d1f
+}
+#unm_search_form input.image_button {
+    background-color : transparent;
+    border : 0
+}
+#unm_search_form label.search_query_label {
+    color : #fff
+}
+#skipnav a,
+#skipnav a:hover,
+#skipnav a:visited {
+    position : absolute;
+    left : 0px;
+    top : -500px;
+    width : 1px;
+    height : 1px;
+    overflow : hidden;
+    color : #FFF
+}
+#skipnav ul:active,
+#skipnav a:active,
+#skipnav a:focus {
+    position : static;
+    width : auto;
+    height : auto
+}
+.hide {
+    display : none;
+    background-color : #fff;
+    color : #000
+}
+#unm_panel {
+    position : absolute;
+    width : 100%;
+    top : 0;
+    left : 0;
+    background-color : #333;
+    filter : alpha(opacity=98);
+    -moz-opacity : 0.98;
+    -khtml-opacity : 0.98;
+    opacity : 0.98;
+    color : #fff;
+    display : none;
+    z-index : 2
+}
+#unm_panel_content {
+    width : 940px;
+    margin : 0 auto;
+    padding-top : 10px;
+    color : #fff;
+    filter : alpha(opacity=100)
+;
+    -moz-opacity : 1;
+    -khtml-opacity : 1;
+    opacity : 1;
+    overflow : hidden;
+    position : relative
+}
+#unm_panel h2 {
+    border-bottom : 1px solid #fff;
+    margin-bottom : 10px;
+    padding-bottom : 2px
+}
+.unm_panel_open {
+    color : #fff;
+    font-size : .95em;
+    font-weight : bold;
+    line-height : 1.5em
+    padding-right : 16px;
+    background : transparent url(/v1/images/unm_sprites.gif) 100% -35px no-repeat;
+    font-weight : bold;
+    cursor : pointer
+}
+span.panel_link {
+    padding-right : 16px
+}
+#unm_panel_close {
+    text-align : right;
+    padding-right : 5px;
+    clear : both;
+    position : relative;
+    width : auto;
+    background : #333 url(/v1/images/unm_panel_back.gif) bottom left repeat-x;
+    cursor : pointer;
+    z-index : 1
+}
+#unm_panel_tab {
+    position : absolute;
+    top : 0;
+    right : 5px;
+    cursor : pointer
+}
+#unm_panel_col1 {
+    width : 420px;
+    float : left;
+    margin : 0 10px
+}
+#unm_panel_col2 {
+    width : 250px;
+    float : left;
+    margin : 0 10px
+}
+#unm_panel_col3 {
+    width : 210px;
+    float : left;
+    margin : 0 10px
+}
+#unm_panel a,
+#unm_panel a:visited {
+    background-image : none;
+    color : #fff
+}
+#unm_panel ul.panel_links {
+    list-style : none;
+    margin : -10px 0 0 0;
+    padding : 0
+}
+#unm_panel ul.panel_links li {
+    padding : 10px 0 5px 45px;
+    margin : 0 5px 0 5px;
+    list-style : none;
+    background : transparent url(/v1/images/panel_sprites.png) no-repeat;
+    border-bottom : 1px solid #ccc;
+    float : left;
+    width : 155px;
+    display : inline
+}
+#unm_panel ul.panel_links li:hover {
+    background-color : #999
+}
+#unm_panel ul.panel_links li h3 {
+    margin : 0
+}
+#unm_panel ul.panel_links li a,
+#unm_panel ul.panel_links li a:visited {
+    color : #fff
+}
+#unm_panel ul.panel_links li.panel_link_library {
+    background-position : 5px 12px
+}
+#unm_panel ul.panel_links li.panel_link_gw {
+    background-position : 5px -500px
+}
+#unm_panel ul.panel_links li.panel_link_webmail {
+    background-position : 5px -244px
+}
+#unm_panel ul.panel_links li.panel_link_webct {
+    background-position : 5px -180px
+}
+#unm_panel ul.panel_links li.panel_link_studentinfo {
+    background-position : 5px -308px
+}
+#unm_panel ul.panel_links li.panel_link_fastinfo {
+    background-position : 5px -436px
+}
+#unm_panel ul.panel_links li.panel_link_myunm {
+    background-position : 5px -52px
+}
+#unm_panel ul.panel_links li.panel_link_az {
+    background-position : 5px -372px
+}
+#unm_panel ul.panel_links li.panel_link_directory {
+    background-position : 5px -116px
+}
+#unm_alert {
+    padding : 15px 100px;
+    background : #c10037 url(/v1/images/message_icons/alert.png) 60px 10px no-repeat;
+    font-size : 1.25em;
+    font-weight : bold;
+    color : #fff;
+    margin : 0
+}
+#unm_alert h1 {
+    color : #fff;
+    margin-bottom : .25em;
+    font-size : 1.5em
+}
+#unm_alert a {
+    color : #fff
+}
+#unm_alert p {
+    margin : 0
+}
+.unm_weather {
+    color : #fff
+}
+#unm_weather_header {
+    font-size : 1.2em;
+    font-weight : bold;
+    padding : 5px 0;
+    border-bottom : 1px solid #999
+}
+.unm_weather_timestamp {
+    font-size : .7em;
+    font-weight : normal
+}
+.unm_weather_current_img {
+    float : left
+}
+.unm_weather_current_img img {
+    behavior : url("/v1/stylesheets/iepngfix.htc")
+}
+#unm_weather_current_conditions {
+    text-align : left;
+    margin-left : 125px;
+    height : 128px;
+    font-size : 1.25em
+}
+.unm_weather_current_temp {
+    font-size : 2.5em;
+    font-weight : bold;
+    margin-bottom : 10px
+}
+.unm_weather_temps {
+    margin-bottom : 10px
+}
+.unm_weather_current_condition {
+    font-size : 1.2em
+}
+.unm_weather_data {
+    float : left;
+    padding-right : 20px
+}
+#unm_weather_conditions {
+    padding : 10px 0;
+    border-bottom : 1px solid #999;
+    margin-bottom : 10px
+}
+#unm_weather_current_details {
+    font-size : .75em
+}
+
+/* END UNM HEADER STYLES */
+
+div#hornav {
+	height: 1.5em;
+	background-color: #5e5e60;
+}
+
+ul.bannernav {
+        background-color: #5e5e60;
+        border: 0px none;
+        clear: both;
+        height: 1.5em;
+        list-style-type: none;
+        margin: 0px 0px 1px;
+        padding: 0px;
+        text-align: center;
+}
+
+ul.bannernav li {
+        display: block;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        width: 150px;
+}
+
+.bannernav a:active {
+        background: none repeat scroll 0px 0px #cc6600;
+        color: #ffffff;
+}
+
+ul.bannernav li a, ul.bannernav li a:visited {
+        border-right: 1px solid #ffffff;
+        color: #ffffff;
+        display: block;
+        font-size: 1em;
+        font-weight: bold;
+        line-height: 1.5em;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        text-decoration: none;
+        width: auto;
+}
+
+ul.bannernav li.lastlink {
+        border: 0px none;
+        width: 150px;
+}
+
+ul.bannernav li.lastlink a {
+	border: 0px;
+}
+
+ul.bannernav li a:hover {
+	color: #ffffff;
+	background: #c10037;
+	text-decoration: underline;
+}
+
+.bannernav a:active {
+	background: #c60c60;
+	color: #ffffff;
+}
+
+.bannernav li#active a {
+	background: #c60c60;
+	border: 1px solid #c60c60;
+	color: #ffffff;
+}
+
+/****  Main UL Navigation *****/
+
+.tul {
+	background-color: #5e5d60;
+	border: 2px solid #ffffff;
+	clear: none;
+	float: left;
+	font-size: 13px;
+	height: 25px;
+	line-height: 25px;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 2px;
+	position: relative;
+	text-align: center;
+	width: 186px;
+	z-index: 100;
+}
+
+a.ulmenu {
+	color: #ffffff;
+	text-align: center;
+}
+
+.tul:hover {
+	background: #5e5d60;
+	border: 2px solid #5e5d60;
+	color: #ffffff;
+}
+
+.l2ul {
+	border: 2px solid #5e5d60;
+	border-collapse: collapse;
+	height: 0px;
+	margin: 0px;
+	margin-left: -2px;
+	margin-right: -2px;
+	padding: 0px;
+	text-align: left;
+	visibility: hidden;
+	width: 100%;
+}
+
+.tul:hover .l2ul, .tul:hover a {
+	background-color: #5e5d60;
+	color: #ffffff;
+	display: block;
+	height: auto;
+	line-height: 25px;
+	visibility: visible;
+	width: auto;
+}
+
+.mlink {
+	height: auto;
+	padding-left: 15px;
+	text-decoration: underline;
+	text-indent: -10px;
+	width: auto;
+}
+
+
+
+

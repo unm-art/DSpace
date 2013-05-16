@@ -5,8 +5,8 @@
 <input-forms>
 
  <!-- The form-map maps collection handles to forms. DSpace does not       -->
- <!-- require a collection name to be unique, not even within a community. -->
- <!-- DSpace does however ensure that each collection's handle is unique.  -->
+ <!-- require that a collection's name be unique, even within a community .-->
+ <!-- DSpace does however insure that each collection's handle is unique.  -->
  <!-- Form-map provides the means to associate a unique collection name    -->
  <!-- with a form. The form-map also provides the special handle "default" -->
  <!-- (which is never a collection), here mapped to "traditional". Any     -->
@@ -15,21 +15,219 @@
 
  <form-map>
    <name-map collection-handle="default" form-name="traditional" />
+   <name-map collection-handle="1928/2877" form-name="etd" />
+   <name-map collection-handle="1928/2878" form-name="etd" />
+   <name-map collection-handle="1928/3292" form-name="etd" />
+   <name-map collection-handle="1928/3312" form-name="etd" />
+   <name-map collection-handle="1928/3313" form-name="etd" />
+   <name-map collection-handle="1928/3365" form-name="etd" />
+   <name-map collection-handle="1928/3368" form-name="etd" />
+   <name-map collection-handle="1928/3453" form-name="etd" />
+   <name-map collection-handle="1928/3454" form-name="etd" />
+   <name-map collection-handle="1928/3476" form-name="etd" />
+   <name-map collection-handle="1928/3477" form-name="etd" />
+   <name-map collection-handle="1928/3496" form-name="etd" />
+   <name-map collection-handle="1928/3497" form-name="etd" />
+   <name-map collection-handle="1928/3498" form-name="etd" />
+   <name-map collection-handle="1928/3499" form-name="etd" />
+   <name-map collection-handle="1928/3502" form-name="etd" />
+   <name-map collection-handle="1928/3503" form-name="etd" />
+   <name-map collection-handle="1928/3505" form-name="etd" />
+   <name-map collection-handle="1928/3506" form-name="etd" />
+   <name-map collection-handle="1928/3588" form-name="etd" />
+   <name-map collection-handle="1928/3589" form-name="etd" />
+   <name-map collection-handle="1928/3656" form-name="etd" />
+   <name-map collection-handle="1928/3657" form-name="etd" />
+   <name-map collection-handle="1928/3669" form-name="etd" />
+   <name-map collection-handle="1928/3670" form-name="etd" />
+   <name-map collection-handle="1928/3671" form-name="etd" />
+   <name-map collection-handle="1928/4829" form-name="etd" />
+   <name-map collection-handle="1928/4830" form-name="etd" />
+   <name-map collection-handle="1928/4858" form-name="etd" />
+   <name-map collection-handle="1928/4859" form-name="etd" />
+   <name-map collection-handle="1928/4860" form-name="etd" />
+   <name-map collection-handle="1928/4861" form-name="etd" />
+   <name-map collection-handle="1928/4862" form-name="etd" />
+   <name-map collection-handle="1928/4863" form-name="etd" />
+   <name-map collection-handle="1928/6621" form-name="etd" />
+   <name-map collection-handle="1928/6622" form-name="etd" />
+   <name-map collection-handle="1928/6623" form-name="etd" />
+   <name-map collection-handle="1928/6624" form-name="etd" />
+   <name-map collection-handle="1928/6630" form-name="etd" />
+   <name-map collection-handle="1928/6631" form-name="etd" />
+   <name-map collection-handle="1928/6632" form-name="etd" />
+   <name-map collection-handle="1928/6633" form-name="etd" />
+   <name-map collection-handle="1928/6634" form-name="etd" />
+   <name-map collection-handle="1928/6635" form-name="etd" />
+   <name-map collection-handle="1928/6636" form-name="etd" />
+   <name-map collection-handle="1928/6637" form-name="etd" />
+   <name-map collection-handle="1928/6638" form-name="etd" />
+   <name-map collection-handle="1928/6639" form-name="etd" />
+   <name-map collection-handle="1928/6640" form-name="etd" />
+   <name-map collection-handle="1928/6641" form-name="etd" />
+   <name-map collection-handle="1928/6642" form-name="etd" />
+   <name-map collection-handle="1928/6643" form-name="etd" />
+   <name-map collection-handle="1928/6644" form-name="etd" />
+   <name-map collection-handle="1928/6645" form-name="etd" />
+   <name-map collection-handle="1928/6646" form-name="etd" />
+   <name-map collection-handle="1928/6647" form-name="etd" />
+   <name-map collection-handle="1928/6648" form-name="etd" />
+   <name-map collection-handle="1928/6649" form-name="etd" />
+   <name-map collection-handle="1928/6650" form-name="etd" />
+   <name-map collection-handle="1928/6651" form-name="etd" />
+   <name-map collection-handle="1928/6652" form-name="etd" />
+   <name-map collection-handle="1928/6653" form-name="etd" />
+   <name-map collection-handle="1928/6654" form-name="etd" />
+   <name-map collection-handle="1928/6655" form-name="etd" />
+   <name-map collection-handle="1928/6656" form-name="etd" />
+   <name-map collection-handle="1928/6657" form-name="etd" />
+   <name-map collection-handle="1928/6658" form-name="etd" />
+   <name-map collection-handle="1928/6659" form-name="etd" />
+   <name-map collection-handle="1928/6660" form-name="etd" />
+   <name-map collection-handle="1928/6661" form-name="etd" />
+   <name-map collection-handle="1928/6662" form-name="etd" />
+   <name-map collection-handle="1928/6663" form-name="etd" />
+   <name-map collection-handle="1928/6664" form-name="etd" />
+   <name-map collection-handle="1928/6665" form-name="etd" />
+   <name-map collection-handle="1928/6666" form-name="etd" />
+   <name-map collection-handle="1928/6667" form-name="etd" />
+   <name-map collection-handle="1928/6668" form-name="etd" />
+   <name-map collection-handle="1928/6669" form-name="etd" />
+   <name-map collection-handle="1928/6670" form-name="etd" />
+   <name-map collection-handle="1928/6671" form-name="etd" />
+   <name-map collection-handle="1928/6672" form-name="etd" />
+   <name-map collection-handle="1928/6673" form-name="etd" />
+   <name-map collection-handle="1928/6674" form-name="etd" />
+   <name-map collection-handle="1928/6675" form-name="etd" />
+   <name-map collection-handle="1928/6676" form-name="etd" />
+   <name-map collection-handle="1928/6677" form-name="etd" />
+   <name-map collection-handle="1928/6678" form-name="etd" />
+   <name-map collection-handle="1928/6679" form-name="etd" />
+   <name-map collection-handle="1928/6680" form-name="etd" />
+   <name-map collection-handle="1928/6681" form-name="etd" />
+   <name-map collection-handle="1928/6682" form-name="etd" />
+   <name-map collection-handle="1928/6683" form-name="etd" />
+   <name-map collection-handle="1928/6684" form-name="etd" />
+   <name-map collection-handle="1928/6685" form-name="etd" />
+   <name-map collection-handle="1928/6686" form-name="etd" />
+   <name-map collection-handle="1928/6687" form-name="etd" />
+   <name-map collection-handle="1928/6688" form-name="etd" />
+   <name-map collection-handle="1928/6689" form-name="etd" />
+   <name-map collection-handle="1928/6690" form-name="etd" />
+   <name-map collection-handle="1928/6691" form-name="etd" />
+   <name-map collection-handle="1928/6692" form-name="etd" />
+   <name-map collection-handle="1928/6693" form-name="etd" />
+   <name-map collection-handle="1928/6694" form-name="etd" />
+   <name-map collection-handle="1928/6695" form-name="etd" />
+   <name-map collection-handle="1928/6696" form-name="etd" />
+   <name-map collection-handle="1928/6697" form-name="etd" />
+   <name-map collection-handle="1928/6698" form-name="etd" />
+   <name-map collection-handle="1928/6699" form-name="etd" />
+   <name-map collection-handle="1928/6700" form-name="etd" />
+   <name-map collection-handle="1928/6701" form-name="etd" />
+   <name-map collection-handle="1928/6702" form-name="etd" />
+   <name-map collection-handle="1928/6703" form-name="etd" />
+   <name-map collection-handle="1928/6704" form-name="etd" />
+   <name-map collection-handle="1928/6705" form-name="etd" />
+   <name-map collection-handle="1928/6706" form-name="etd" />
+   <name-map collection-handle="1928/6909" form-name="etd" />
+   <name-map collection-handle="1928/9219" form-name="etd" />
+   <name-map collection-handle="1928/9220" form-name="etd" />
+   <name-map collection-handle="1928/9224" form-name="etd" />
+   <name-map collection-handle="1928/9225" form-name="etd" />
+   <name-map collection-handle="1928/9226" form-name="etd" />
+   <name-map collection-handle="1928/9925" form-name="etd" />
+   <name-map collection-handle="1928/9926" form-name="etd" />
+   <name-map collection-handle="1928/9927" form-name="etd" />
+   <name-map collection-handle="1928/9928" form-name="etd" />
+   <name-map collection-handle="1928/10515" form-name="etd" />
+   <name-map collection-handle="1928/10585" form-name="etd" />
+   <name-map collection-handle="1928/10586" form-name="etd" />
+   <name-map collection-handle="1928/10587" form-name="etd" />
+   <name-map collection-handle="1928/10588" form-name="etd" />
+   <name-map collection-handle="1928/10589" form-name="etd" />
+   <name-map collection-handle="1928/10590" form-name="etd" />
+   <name-map collection-handle="1928/10591" form-name="etd" />
+   <name-map collection-handle="1928/10601" form-name="etd" />
+   <name-map collection-handle="1928/10602" form-name="etd" />
+   <name-map collection-handle="1928/10605" form-name="etd" />
+   <name-map collection-handle="1928/10607" form-name="etd" />
+   <name-map collection-handle="1928/10608" form-name="etd" />
+   <name-map collection-handle="1928/10611" form-name="etd" />
+   <name-map collection-handle="1928/10614" form-name="etd" />
+   <name-map collection-handle="1928/10615" form-name="etd" />
+   <name-map collection-handle="1928/10616" form-name="etd" />
+   <name-map collection-handle="1928/10618" form-name="etd" />
+   <name-map collection-handle="1928/10619" form-name="etd" />
+   <name-map collection-handle="1928/10620" form-name="etd" />
+   <name-map collection-handle="1928/10621" form-name="etd" />
+   <name-map collection-handle="1928/10622" form-name="etd" />
+   <name-map collection-handle="1928/10625" form-name="etd" />
+   <name-map collection-handle="1928/10626" form-name="etd" />
+   <name-map collection-handle="1928/10628" form-name="etd" />
+   <name-map collection-handle="1928/10629" form-name="etd" />
+   <name-map collection-handle="1928/10630" form-name="etd" />
+   <name-map collection-handle="1928/10631" form-name="etd" />
+   <name-map collection-handle="1928/10632" form-name="etd" />
+   <name-map collection-handle="1928/10633" form-name="etd" />
+   <name-map collection-handle="1928/10635" form-name="etd" />
+   <name-map collection-handle="1928/10636" form-name="etd" />
+   <name-map collection-handle="1928/10638" form-name="etd" />
+   <name-map collection-handle="1928/10640" form-name="etd" />
+   <name-map collection-handle="1928/10641" form-name="etd" />
+   <name-map collection-handle="1928/10643" form-name="etd" />
+   <name-map collection-handle="1928/10644" form-name="etd" />
+   <name-map collection-handle="1928/10646" form-name="etd" />
+   <name-map collection-handle="1928/10647" form-name="etd" />
+   <name-map collection-handle="1928/10649" form-name="etd" />
+   <name-map collection-handle="1928/10650" form-name="etd" />
+   <name-map collection-handle="1928/10653" form-name="etd" />
+   <name-map collection-handle="1928/10654" form-name="etd" />
+   <name-map collection-handle="1928/10656" form-name="etd" />
+   <name-map collection-handle="1928/10657" form-name="etd" />
+   <name-map collection-handle="1928/10659" form-name="etd" />
+   <name-map collection-handle="1928/10660" form-name="etd" />
+   <name-map collection-handle="1928/10674" form-name="etd" />
+   <name-map collection-handle="1928/10676" form-name="etd" />
+   <name-map collection-handle="1928/10681" form-name="etd" />
+   <name-map collection-handle="1928/10684" form-name="etd" />
+   <name-map collection-handle="1928/10688" form-name="etd" />
+   <name-map collection-handle="1928/10689" form-name="etd" />
+   <name-map collection-handle="1928/10690" form-name="etd" />
+   <name-map collection-handle="1928/10691" form-name="etd" />
+   <name-map collection-handle="1928/10693" form-name="etd" />
+   <name-map collection-handle="1928/10694" form-name="etd" />
+   <name-map collection-handle="1928/10695" form-name="etd" />
+   <name-map collection-handle="1928/10697" form-name="etd" />
+   <name-map collection-handle="1928/10699" form-name="etd" />
+   <name-map collection-handle="1928/10702" form-name="etd" />
+   <name-map collection-handle="1928/10703" form-name="etd" />
+   <name-map collection-handle="1928/10705" form-name="etd" />
+   <name-map collection-handle="1928/10706" form-name="etd" />
+   <name-map collection-handle="1928/10708" form-name="etd" />
+   <name-map collection-handle="1928/10710" form-name="etd" />
+   <name-map collection-handle="1928/10711" form-name="etd" />
+   <name-map collection-handle="1928/10713" form-name="etd" />
+   <name-map collection-handle="1928/10927" form-name="etd" />
+   <name-map collection-handle="1928/526" form-name="karst" />
+   <name-map collection-handle="1928/9982" form-name="laii" />
+   <name-map collection-handle="1928/9983" form-name="laii" />
+   <name-map collection-handle="1928/9984" form-name="laii" />
  </form-map>
 
 
  <!-- The form-definitions map lays out the detailed definition of all the -->
- <!-- submission forms. Each separate form set has a unique name as an     -->
+ <!-- submission forms.Each separate form set has a unique name as an      -->
  <!-- attribute. This name matches one of the names in the form-map. One   -->
  <!-- named form set has the name "traditional"; as this name suggests,    -->
  <!-- it is the old style and is also the default, which gets used when    -->
- <!-- the specified collection has no correspondingly-named form set.      -->
+ <!-- the specified collection has no correspondingly named form set.      -->
  <!--                                                                      -->
  <!-- Each form set contains an ordered set of pages; each page defines    -->
  <!-- one submission metadata entry screen. Each page has an ordered list  -->
  <!-- of field definitions, Each field definition corresponds to one       -->
  <!-- metatdata entry (a so-called row), which has a DC element name, a    -->
- <!-- displayed label, a text string prompt which is called a hint, and    -->
+ <!-- displayed label, a text string prompt which is called a hint , and   -->
  <!-- an input-type. Each field also may hold optional elements: DC        -->
  <!-- qualifier name, a repeatable flag, and a text string whose presence  -->
  <!-- serves as a 'this field is required' flag.                           -->
@@ -45,7 +243,7 @@
          <repeatable>true</repeatable>
          <label>Authors</label>
          <input-type>name</input-type>
-         <hint>Enter the names of the authors of this item below.</hint>
+         <hint>Enter the names of the authors of this item above.</hint>
          <required></required>
        </field>
 
@@ -67,7 +265,7 @@
          <repeatable>true</repeatable>
          <label>Other Titles</label>
          <input-type>onebox</input-type>
-         <hint>If the item has any alternative titles, please enter them below.</hint>
+         <hint>If the item has any alternative titles, please enter them above.</hint>
          <required></required>
        </field>
 
@@ -79,7 +277,7 @@
          <label>Date of Issue</label>
          <input-type>date</input-type>
          <hint>Please give the date of previous publication or public distribution
-                        below.  You can leave out the day and/or month if they aren't
+                        above.  You can leave out the day and/or month if they aren't
                         applicable.</hint>
          <required>You must enter at least the year.</required>
        </field>
@@ -126,7 +324,7 @@
          <label>Identifiers</label>
          <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
          <hint>If the item has any identification numbers or codes associated with
-it, please enter the types and the actual numbers or codes below.</hint>
+it, please enter the types and the actual numbers or codes above.</hint>
          <required></required>
        </field>
 
@@ -162,7 +360,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>Subject Keywords</label>
          <input-type>twobox</input-type>
-         <hint>Enter appropriate subject keywords or phrases below. </hint>
+         <hint> Enter appropriate subject keywords or phrases above. </hint>
          <required></required>
          <vocabulary>srsc</vocabulary>
        </field>
@@ -174,7 +372,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Abstract</label>
          <input-type>textarea</input-type>
-         <hint>Enter the abstract of the item below. </hint>
+         <hint> Enter the abstract of the item above. </hint>
          <required></required>
        </field>
 
@@ -185,7 +383,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>false</repeatable>
          <label>Sponsors</label>
          <input-type>textarea</input-type>
-         <hint>Enter the names of any sponsors and/or funding codes in the box below. </hint>
+         <hint> Enter the names of any sponsors and/or funding codes in the box above. </hint>
          <required></required>
        </field>
 
@@ -199,6 +397,17 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <hint>Enter any other description or comments in this box. </hint>
          <required></required>
        </field>
+     <field>
+         <dc-schema>emb</dc-schema>
+         <dc-element>embargo</dc-element>
+         <dc-qualifier>terms</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Embargo lift date</label>
+         <input-type>date</input-type>
+         <hint>(Optional)  If applicable, enter the date the embargo will be lifted.</hint>
+         <required></required>
+         <visibility></visibility>
+       </field>
      </page>
    </form>
 
@@ -211,11 +420,503 @@ it, please enter the types and the actual numbers or codes below.</hint>
          <repeatable>true</repeatable>
          <label>One: Authors</label>
          <input-type>name</input-type>
-         <hint>Enter the names of the authors of this item below.</hint>
+         <hint>Enter the names of the authors of this item above.</hint>
          <required></required>
        </field>
       </page>
     </form>
+ <form name="etd">
+     <page number="1">
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>author</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Author</label>
+         <input-type>name</input-type>
+         <hint>Enter your name above.  We encourage you to provide your middle name and date of birth to help us distinguish you from others with a similar name. <br /> Preferred form:  <u>Last Name</u>, <u>First Name</u> <u>Middle Name/Initial</u> <u>Suffix</u>, <u>Date of Birth</u><br /> <span style="font-size:175%;">(e.g., Last Name box: <span style="color:blue"><b>Smith</b></span> First Name box: <span style="color:blue"><b>James John Jr., 1984-</b></span>)</span></hint>
+         <required>You must enter your name in the author field.</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Title</label>
+         <input-type>textarea</input-type>
+         <hint>Enter the title of your thesis/dissertation above.</hint>
+         <required>You must enter a title for this item.</required>
+       </field>
+       
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>submitted</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Date of Graduation</label>
+         <input-type value-pairs-name="etd_gradDates">dropdown</input-type>
+         <hint>Select the month and year of your graduation above.</hint>
+         <required>You must select a graduation date.</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Publication Type</label>
+         <input-type value-pairs-name="etd_types">dropdown</input-type>
+         <hint>Select Thesis, Dissertation, or Report above.</hint>
+         <required>You must select a publication type.</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>degree</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Degree Name</label>
+         <input-type>onebox</input-type>
+         <hint>Enter your degree above.  Example:  Computer Engineering</hint>
+         <required>You must enter a degree name.</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>level</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Degree Level</label>
+         <input-type value-pairs-name="etd_degreeLevels">dropdown</input-type>
+         <hint>Select your degree level above.</hint>
+         <required>You must select a degree level.</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>department</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Department</label>
+         <input-type value-pairs-name="etd_dept_names">dropdown</input-type>
+         <hint>Enter the department which is granting this degree above.</hint>
+         <required>You must select a department.</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>advisor</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Major Professor</label>
+         <input-type>name</input-type>
+         <hint>Enter your thesis advisor(s) above.</hint>
+         <required>You must enter an advisor.</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>committee-member</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Committee Member(s)</label>
+         <input-type>name</input-type>
+         <hint>Enter your thesis committee member(s) above.</hint>
+         <required>You must enter at least one committee member</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>language</dc-element>
+         <dc-qualifier>iso</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Language</label>
+         <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+         <hint>Select the main language of the item above.</hint>
+         <required></required>
+       </field>
+     </page>
+     
+     <page number="2">
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <!-- An input-type of twobox MUST be marked as repeatable -->
+         <repeatable>true</repeatable>
+         <label>Subject Keywords</label>
+         <input-type>twobox</input-type>
+         <hint>Enter keywords for your thesis/dissertation above.</hint>
+         <required>You must enter subject keywords for your work.</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstract</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Abstract</label>
+         <input-type>textarea</input-type>
+         <hint>Enter the text of your abstract above. Do not include the heading "Abstract".</hint>
+         <required>You must enter an abstract.</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>sponsorship</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Sponsors</label>
+         <input-type>textarea</input-type>
+         <hint>(Optional)  Enter the names of agencies, if any, that helped to fund your research above.  Do not use acronyms or abbreviations.  If you did not have a source of funding for your research, leave this space blank.</hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>emb</dc-schema>
+         <dc-element>embargo</dc-element>
+         <dc-qualifier>terms</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Embargo lift date</label>
+         <input-type>date</input-type>
+         <hint>(Optional)  If applicable, enter the date the embargo will be lifted.</hint>
+         <required></required>
+         <visibility>workflow</visibility>
+       </field>
+       
+     </page>
+   </form>
+   
+   <form name="karst">
+     <page number="1">
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>author</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Author</label>
+         <input-type>name</input-type>
+         <hint>Enter the names of the authors of this item.</hint>
+         <required>You must enter the name of at least one author to continue.</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Title</label>
+         <input-type>onebox</input-type>
+         <hint>Enter the title of the item below.</hint>
+         <required>You must enter the title of the item to continue.</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>imageid</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Image Filename</label>
+         <input-type>onebox</input-type>
+         <hint>Enter a name/title for this image.</hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>issued</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Date Issued/Created</label>
+         <input-type>date</input-type>
+         <hint>Enter the date this item was photographed or published.</hint>
+         <required>You must enter the item's Date Issued.</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>acqdata</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Image Acquisition Data</label>
+         <input-type>twobox</input-type>
+         <hint>Example:  Image Type:  SEM Image, Scale Bar:  2um, Image Date:  3/13/1998, Magnification:  27000, Etch: No Etching, Coating:  Au Pd..</hint>
+         <required></required>
+       </field>
+     </page>
+     
+     <page number="2">
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>coverage</dc-element>
+         <dc-qualifier>spatial</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Sampling Site</label>
+         <input-type>onebox</input-type>
+         <hint>Example:  Cave: Holeinground, State: NM, Country: U.S.A.</hint>
+         <required>You must enter Sampling Site information.</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>cavetype</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Type of Cave</label>
+         <input-type value-pairs-name="sem_cave_types">dropdown</input-type>
+         <hint>Choose the type of cave in which this image was taken.</hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Keywords/Search Terms</label>
+         <input-type>twobox</input-type>
+         <hint>Please enter general descriptive keywords below.</hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>sampletype</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Sample Type</label>
+         <input-type>onebox</input-type>
+         <hint>Example:  Sample Type: FMD.</hint>
+         <required>You must enter a Sample Type.</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Speleothem, Sample Color</label>
+         <input-type>onebox</input-type>
+         <hint>Example:  Speleothem: FMD, Sample Color: blue.</hint>
+         <required></required>
+       </field>
+     </page>
+     
+     <page number="3">
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>relatedimages</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Related Images</label>
+         <input-type>onebox</input-type>
+         <hint>Enter information regarding related images</hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Related EDX Images</label>
+         <input-type>onebox</input-type>
+         <hint>Enter information regarding related EDX images</hint>
+         <required></required>
+       </field>
+     </page>
+   </form>
+   
+   <form name="laii">
+     <page number="1">
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>contributor</dc-element>
+         <dc-qualifier>author</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Authors</label>
+         <input-type>name</input-type>
+         <hint>Enter the names of the authors of this item above.</hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Title</label>
+         <input-type>onebox</input-type>
+         <hint>Enter the main title of the item.</hint>
+         <required>You must enter a main title for this item.</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>title</dc-element>
+         <dc-qualifier>alternative</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Other Titles</label>
+         <input-type>onebox</input-type>
+         <hint>If the item has any alternative titles, please enter them above.</hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>date</dc-element>
+         <dc-qualifier>issued</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Date of Issue</label>
+         <input-type>date</input-type>
+         <hint>Please give the date of previous publication or public distribution
+           above.  You can leave out the day and/or month if they aren't
+           applicable.</hint>
+         <required>You must enter at least the year.</required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>publisher</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Publisher</label>
+         <input-type>onebox</input-type>
+         <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>citation</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Citation</label>
+         <input-type>onebox</input-type>
+         <hint>Enter the standard citation for the previously issued instance of this item.</hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>relation</dc-element>
+         <dc-qualifier>ispartofseries</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Series/Report No.</label>
+         <input-type>series</input-type>
+         <hint>Enter the series and number assigned to this item by your community.</hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <!-- An input-type of qualdrop_value MUST be marked as repeatable -->
+         <repeatable>true</repeatable>
+         <label>Identifiers</label>
+         <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
+         <hint>If the item has any identification numbers or codes associated with
+           it, please enter the types and the actual numbers or codes above.</hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>type</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Type</label>
+         <input-type value-pairs-name="common_types">dropdown</input-type>
+         <hint> Select the type(s) of content of the item. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>language</dc-element>
+         <dc-qualifier>iso</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Language</label>
+         <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+         <hint>Select the language of the main content of the item.  If the language does not appear in the list below, please select 'Other'.  If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
+         <required></required>
+       </field>
+     </page>
+     
+     <page number="2">
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>subject</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <!-- An input-type of twobox MUST be marked as repeatable -->
+         <repeatable>true</repeatable>
+         <label>Subject Keywords</label>
+         <input-type>twobox</input-type>
+         <hint> Enter appropriate subject keywords or phrases above. </hint>
+         <required></required>
+         <vocabulary>srsc</vocabulary>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>abstract</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Abstract</label>
+         <input-type>textarea</input-type>
+         <hint> Enter the abstract of the item above. </hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier>sponsorship</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Sponsors</label>
+         <input-type>textarea</input-type>
+         <hint> Enter the names of any sponsors and/or funding codes in the box above. </hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>description</dc-element>
+         <dc-qualifier></dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Description</label>
+         <input-type>textarea</input-type>
+         <hint> Enter any other description or comments in this box. </hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>dc</dc-schema>
+         <dc-element>identifier</dc-element>
+         <dc-qualifier>url</dc-qualifier>
+         <repeatable>true</repeatable>
+         <label>Available at</label>
+         <input-type>onebox</input-type>
+         <hint>A URL for this item, if it is located outside of LoboVault. </hint>
+         <required></required>
+       </field>
+       
+       <field>
+         <dc-schema>emb</dc-schema>
+         <dc-element>embargo</dc-element>
+         <dc-qualifier>terms</dc-qualifier>
+         <repeatable>false</repeatable>
+         <label>Embargo lift date</label>
+         <input-type>date</input-type>
+         <hint>(Optional)  If applicable, enter the date the embargo will be lifted.</hint>
+         <required></required>
+         <visibility></visibility>
+       </field>
+     </page>
+   </form>
  </form-definitions>
 
 
@@ -334,6 +1035,10 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <stored-value>Technical Report</stored-value>
      </pair>
      <pair>
+       <displayed-value>Text</displayed-value>
+       <stored-value>Text</stored-value>
+     </pair>
+     <pair>
        <displayed-value>Thesis</displayed-value>
        <stored-value>Thesis</stored-value>
      </pair>
@@ -372,6 +1077,10 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <stored-value>es</stored-value>
      </pair>
      <pair>
+       <displayed-value>Portuguese</displayed-value>
+       <stored-value>pt</stored-value>
+     </pair>
+     <pair>
        <displayed-value>German</displayed-value>
        <stored-value>de</stored-value>
      </pair>
@@ -396,6 +1105,325 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <stored-value>other</stored-value>
      </pair>
    </value-pairs>
+
+    <value-pairs value-pairs-name="etd_gradDates" dc-term="date">
+		<pair>
+			<displayed-value> </displayed-value>
+			<stored-value></stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2012 May</displayed-value>
+			<stored-value>May 2012</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2012 July</displayed-value>
+			<stored-value>July 2012</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2012 December</displayed-value>
+			<stored-value>December 2012</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2013 May</displayed-value>
+			<stored-value>May 2013</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2013 July</displayed-value>
+			<stored-value>July 2013</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2013 December</displayed-value>
+			<stored-value>December 2013</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2014 May</displayed-value>
+			<stored-value>May 2014</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2015 July</displayed-value>
+			<stored-value>July 2015</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2015 December</displayed-value>
+			<stored-value>December 2015</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2016 May</displayed-value>
+			<stored-value>May 2016</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2016 July</displayed-value>
+			<stored-value>July 2016</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>2016 December</displayed-value>
+			<stored-value>December 2016</stored-value>
+		</pair>
+	</value-pairs>
+
+	<value-pairs value-pairs-name="etd_degreeLevels" dc-term="description_level">
+		<pair>
+			<displayed-value>Doctoral</displayed-value>
+			<stored-value>Doctoral</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>Masters</displayed-value>
+			<stored-value>Masters</stored-value>
+		</pair>
+	</value-pairs>
+	
+	<value-pairs value-pairs-name="etd_types" dc-term="type">
+		<pair>
+			<displayed-value> </displayed-value>
+			<stored-value></stored-value>
+		</pair>
+		<pair>
+			<displayed-value>Thesis (masters)</displayed-value>
+			<stored-value>Thesis</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>Report (masters)</displayed-value>
+			<stored-value>Report</stored-value>
+		</pair>
+		<pair>
+			<displayed-value>Dissertation (doctoral)</displayed-value>
+			<stored-value>Dissertation</stored-value>
+		</pair>
+	</value-pairs>
+
+  <value-pairs value-pairs-name="etd_dept_names" dc-term="description_department">
+    <pair>
+      <displayed-value>Biology Dept.</displayed-value>
+      <stored-value>University of New Mexico.  Biology Dept.</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Biomedical Sciences Graduate Program</displayed-value>
+      <stored-value>University of New Mexico.  Biomedical Sciences Graduate Program</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>College of Nursing</displayed-value>
+      <stored-value>University of New Mexico.  College of Nursing</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>College of Pharmacy</displayed-value>
+      <stored-value>University of New Mexico.  College of Pharmacy</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of American Studies</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of American Studies</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Anthropology</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Anthropology</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Art and Art History</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Art and Art History</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Biochemistry</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Biochemistry</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Chemical and Nuclear Engineering</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Chemical and Nuclear Engineering</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Chemistry</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Chemistry</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Civil Engineering</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Civil Engineering</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Communication and Journalism</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Communication and Journalism</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Computer Science</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Computer Science</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Earth and Planetary Sciences</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Earth and Planetary Sciences</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Economics</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Economics</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Electrical and Computer Engineering</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Electrical and Computer Engineering</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of English</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of English</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Family and Community Medicine</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Family and Community Medicine</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Foreign Languages and Literatures</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Foreign Languages and Literatures</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Geography</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Geography</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Geology</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Geology</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of History</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of History</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Latin American Studies</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Latin American Studies</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Linguistics</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Linguistics</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Mathematics and Statistics</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Mathematics and Statistics</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Mechanical Engineering</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Mechanical Engineering</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Music</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Music</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Philosophy</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Philosophy</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Physics &amp; Astronomy</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Physics &amp; Astronomy</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Political Science</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Political Science</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Psychology</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Psychology</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Sociology</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Sociology</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Spanish and Portuguese</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Spanish and Portuguese</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Speech and Hearing Sciences</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Speech and Hearing Sciences</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Teacher Education</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Teacher Education</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Dept. of Theater and Dance</displayed-value>
+      <stored-value>University of New Mexico.  Dept. of Theater and Dance</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Division of Dental Hygiene</displayed-value>
+      <stored-value>University of New Mexico.  Division of Dental Hygiene</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Division of Educational Leadership and Organizational Learning</displayed-value>
+      <stored-value>University of New Mexico.  Division of Educational Leadership and Organizational Learning</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Division of Educational Specialties</displayed-value>
+      <stored-value>University of New Mexico.  Division of Educational Specialties</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Division of Individual, Family and Community Education</displayed-value>
+      <stored-value>University of New Mexico.  Division of Individual, Family and Community Education</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Division of Language, Literacy and Sociocultural Studies</displayed-value>
+      <stored-value>University of New Mexico.  Division of Language, Literacy and Sociocultural Studies</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Division of Physical Performance and Development</displayed-value>
+      <stored-value>University of New Mexico.  Division of Physical Performance and Development</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Manufacturing Engineering Program</displayed-value>
+      <stored-value>University of New Mexico.  Manufacturing Engineering Program</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Multicultural Teacher and Childhood Education Program</displayed-value>
+      <stored-value>University of New Mexico.  Multicultural Teacher and Childhood Education Program</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Nanoscience and Microsystems Program</displayed-value>
+      <stored-value>University of New Mexico.  Nanoscience and Microsystems Program</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Occupational Therapy Program</displayed-value>
+      <stored-value>University of New Mexico.  Occupational Therapy Program</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Physical Therapy Program</displayed-value>
+      <stored-value>University of New Mexico.  Physical Therapy Program</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>Robert O. Anderson Schools of Management</displayed-value>
+      <stored-value>University of New Mexico.  Robert O. Anderson Schools of Management</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>School of Architecture and Planning</displayed-value>
+      <stored-value>University of New Mexico.  School of Architecture and Planning</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>School of Law</displayed-value>
+      <stored-value>University of New Mexico.  School of Law</stored-value>
+    </pair>
+    <pair>
+      <displayed-value>School of Public Administration</displayed-value>
+      <stored-value>University of New Mexico.  School of Public Administration</stored-value>
+    </pair>
+  </value-pairs>
+
+	 <value-pairs value-pairs-name="sem_cave_types" dc-term="subject">
+	   <pair>
+		   <displayed-value>Limestone</displayed-value>
+			 <stored-value>Limestone</stored-value>
+		 </pair>
+	   <pair>
+		   <displayed-value>Gypsum</displayed-value>
+			 <stored-value>Gypsum</stored-value>
+		 </pair>
+	   <pair>
+		   <displayed-value>Lava Tube</displayed-value>
+			 <stored-value>Lava Tube</stored-value>
+		 </pair>
+	   <pair>
+		   <displayed-value>Granite</displayed-value>
+			 <stored-value>Granite</stored-value>
+		 </pair>
+	   <pair>
+		   <displayed-value>Sandstone</displayed-value>
+			 <stored-value>Sandstone</stored-value>
+		 </pair>
+	   <pair>
+		   <displayed-value>Ice</displayed-value>
+			 <stored-value>Ice</stored-value>
+		 </pair>
+	 </value-pairs>
 
     </form-value-pairs>
 
