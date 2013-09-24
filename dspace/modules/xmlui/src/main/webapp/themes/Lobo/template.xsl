@@ -1798,7 +1798,7 @@
                 <ul class="ds-options-list">
                     <li><a href="http://elibrary.unm.edu">University Libraries</a></li>
                     <li><a href="http://lawlibrary.unm.edu/">Law Library</a></li>
-                    <li><a href="http://hsc.unm.edu/library/">Health Sciences Library</a></li>
+                    <li><a href="http://hslic.unm.edu/">Health Sciences Library</a></li>
                 </ul>
             </div>
             <h3 id="ds-search-option-head" class="ds-option-set-head"><i18n:text>xmlui.dri2xhtml.structural.search</i18n:text></h3>

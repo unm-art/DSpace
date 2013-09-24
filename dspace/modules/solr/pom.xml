@@ -2,7 +2,11 @@
    <modelVersion>4.0.0</modelVersion>
    <groupId>org.dspace.modules</groupId>
    <artifactId>solr</artifactId>
+<<<<<<< HEAD
    <version>3.2</version>
+=======
+   <version>3.0</version>
+>>>>>>> 1739054f4e4f91f40f541973fc9b08799d829d27
    <packaging>war</packaging>
    <name>DSpace SOLR :: Local Customizations</name>
    <description>
@@ -13,7 +17,7 @@
    <parent>
       <groupId>org.dspace</groupId>
       <artifactId>modules</artifactId>
-      <version>3.3-SNAPSHOT</version>
+      <version>3.2</version>
       <relativePath>..</relativePath>
    </parent>
 
